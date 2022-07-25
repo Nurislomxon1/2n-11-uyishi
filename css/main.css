@@ -25,11 +25,15 @@
 * {
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: "Public Sans";
     background-color: #f2f2f2;
-    
 }
 .site-header {
     position: fixed;
@@ -64,7 +68,6 @@ body {
 }
 .site-nav__item {
     margin-right: 30px;
-    
 }
 .site-nav__link {
     padding-bottom: 28px;
@@ -80,7 +83,7 @@ body {
     line-height: 16px;
     letter-spacing: -0.107692px;
     color: #2d314d;
-    border-bottom: 3px solid #33D35E 
+    border-bottom: 3px solid #33d35e; 
     /* border-image: 1px solid ; */
     
 }
@@ -148,10 +151,8 @@ body {
 }
 /* service section start */
 .service {
-    position: absolute;
-    z-index: -1;
-    top: 720px;
     width: 100% ;
+    margin-top: -150px;
     padding-top: 96px;
     background: #f4f5f7;
 }
@@ -231,3 +232,158 @@ body {
 }
 /* service section end */
 
+/* latest-articles section start */
+.latest-articles {
+    padding-top: 80px;
+    background-color: #f2f2f2;
+}
+.latest-articles__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: #2d314d;
+}
+.latest-articles__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.latest-articles__item {
+    width: 255px;
+    height: 405px;
+    margin-bottom: 80px;
+    background: #ffff;
+    border-radius: 5px;
+}
+.latest-articles__item::before {
+    content: "";
+    display: inline-block;
+    width: 255px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.latest-articles__item:nth-child(1)::before {
+    background-image: url(../images/many.png);
+}
+.latest-articles__item:nth-child(2)::before {
+    background-image: url(../images/table.png);
+}
+.latest-articles__item:nth-child(3)::before {
+    background-image: url(../images/plane.png);
+}
+.latest-articles__item:nth-child(4)::before {
+    background-image: url(../images/live.png);
+}
+.box {
+    width: 207px;
+    margin: 25px;
+}
+.latest-articles__desc {
+    margin-bottom: 8px;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: -0.15625px;
+    color: #9597a5;
+}
+.latest-articles__heading {
+    margin-bottom: 8px;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.285714px;
+    color: #2d314d;
+}
+.latest-articles__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.203125px;
+    color: #9597a5;
+}
+/* latest-articles section end */
+/* start site footer  */
+.site-footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #2d314d;
+}
+.site-footer__inner {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo-img {
+    display: block;
+    margin-bottom: 55px;
+}
+.site-footer__list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.site-footer__item:not(:last-child) {
+    margin-right: 13px;
+}
+.site-footer__box {
+    display: flex;
+}
+.lists {
+    margin-top: 0;
+    list-style: none;
+}
+.lists__link {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.234375px;
+    text-decoration: none;
+    color: #ffff;
+}
+.site-footer_bottom-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.site-footer__link {
+    padding: 8px  35px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    background-image: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+    border-radius: 22px;
+}
+.bottom--list {
+    margin-top: 0;
+    list-style: none;
+}
+.bottom-list__link {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.234375px;
+    text-decoration: none;
+    color: #ffff;
+}
+.site-footer__link:hover {
+    
+}
+.site-footer__bootom-text {
+    font-size: 15px;
+    line-height: 26px;
+    text-align: right;
+    letter-spacing: -0.234375px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+/* finish site footer  */
